@@ -1,0 +1,30 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v20-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'KyivTypeTitling-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/KyivTypeTitling-Medium.woff2') format('woff2');
+}
