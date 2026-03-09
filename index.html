@@ -14,231 +14,232 @@
 </head>
 
 <body>
-  <div class="site">
-    <header class="header wrapper">
-      <nav class="navbar">
-        <a href="/" class="logo">
-          <img src="./assets/images/svg/logo-netflix.svg" alt="Netflix Home" />
-        </a>
-
-        <div class="navbar__present-day">
-          <span class="navbar__date day-name" id="day-name">friday</span>
-          <span class="navbar__date month-day" id="month-day">july</span>
-          <span class="navbar__date day-number" id="day-number">8th</span>
-          <!-- <span class="navbar__date year" id="year">2020</span> -->
-        </div>
-
-        <div class="navbar__right">
-          <form action="/" class="navbar__form">
-            <input type="text" name="search" id="search" class="navbar__search-input" placeholder="Search..." />
-
-            <button type="submit" class="navbar__search-button" id="searchBtn">
-              <span class="search-icon"></span>
-            </button>
-          </form>
-
-          <div class="navbar__user-avatar">
-            <img src="./assets/images/png/avatar.png" alt="User Avatar" />
+  
+  
+  <main class="main wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <a href="/" class="logo">
+            <img src="./assets/images/svg/logo-netflix.svg" alt="Netflix Home" />
+          </a>
+    
+          <div class="navbar__present-day">
+            <span class="navbar__date day-name" id="day-name">friday</span>
+            <span class="navbar__date month-day" id="month-day">july</span>
+            <span class="navbar__date day-number" id="day-number">8th</span>
+            <!-- <span class="navbar__date year" id="year">2020</span> -->
           </div>
-        </div>
-      </nav>
-
-      <picture class="header__image">
+    
+          <div class="navbar__right">
+            <form action="/" class="navbar__form">
+              <input type="text" name="search" id="search" class="navbar__search-input" placeholder="Search..." />
+    
+              <button type="submit" class="navbar__search-button" id="searchBtn">
+                <span class="search-icon"></span>
+              </button>
+            </form>
+    
+            <div class="navbar__user-avatar">
+              <img src="./assets/images/png/avatar.png" alt="User Avatar" />
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <picture class="hero__image">
         <source media="(min-width: 75em)" srcset="./assets/images/webp/hero-bg2x.webp" />
         <source media="(min-width: 48em)" srcset="./assets/images/webp/hero-bg1x.webp" />
         <img src="./assets/images/jpg/hero-bg2x.jpg" alt="hero film picture" loading="lazy" decoding="async" />
       </picture>
 
-      <div class="header__tab-wrapper">
-        <div class="tab">
-          <button class="tablinks" onclick="openMovie(event, 'drama')">
-            <p>drama</p>
-          </button>
-          <button class="tablinks" onclick="openMovie(event, 'thriller')" id="defaultOpen">
-            <p>thriller</p>
-          </button>
-          <button class="tablinks" onclick="openMovie(event, 'supernatural')">
-            <p>supernatural</p>
-          </button>
-        </div>
-
-        <div>
-          <div id="drama" class="tabcontent">
-            <h1>drama</h1>
-
-            <dl class="desc-list">
-              <div>
-                <dt><span hidden>Year</span></dt>
-                <dd>2019</dd>
-              </div>
-              <div>
-                <dt><span class="uppercase">director:</span></dt>
-                <dd>name director</dd>
-              </div>
-              <div>
-                <dt><span>seasons:</span></dt>
-                <dd>3 &#10088; 5 Episodes &#10089;</dd>
-              </div>
-            </dl>
-
-            <p class="p">
-              In 1980s Indiana, a group of young friends witness supernatural
-              forces and secret government exploits. As they search for
-              answers, the children unravel a series of extraordinary
-              mysteries.
-            </p>
-
-            <ul role="list" class="rating">
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star"></span></li>
-              <li><span class="star"></span></li>
-            </ul>
-
-            <div class="tabcontent-btns">
-              <a href="#" class="button button--accent"><span>stream now</span><span class="play"></span></a>
-              <a href="#" class="button button--transparent">all episodes</a>
-            </div>
+      <section class="hero">
+    
+        <div class="hero__tab-wrapper">
+          <div class="tab">
+            <button class="tablinks" onclick="openMovie(event, 'drama')">
+              <p>drama</p>
+            </button>
+            <button class="tablinks" onclick="openMovie(event, 'thriller')" id="defaultOpen">
+              <p>thriller</p>
+            </button>
+            <button class="tablinks" onclick="openMovie(event, 'supernatural')">
+              <p>supernatural</p>
+            </button>
           </div>
-
-          <div id="thriller" class="tabcontent">
-            <h1>stranger things</h1>
-
-            <dl class="desc-list">
-              <div>
-                <dt><span hidden>Year</span></dt>
-                <dd>2019</dd>
-              </div>
-              <div>
-                <dt><span class="uppercase">director:</span></dt>
-                <dd>shawn levy</dd>
-              </div>
-              <div>
-                <dt><span>seasons:</span></dt>
-                <dd>3 &#10088; 5 Episodes &#10089;</dd>
-              </div>
-            </dl>
-
-            <p class="p">
-              In 1980s Indiana, a group of young friends witness supernatural
-              forces and secret government exploits. As they search for
-              answers, the children unravel a series of extraordinary
-              mysteries.
-            </p>
-
-            <ul role="list" class="rating">
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star"></span></li>
-              <li><span class="star"></span></li>
-            </ul>
-
-            <div class="tabcontent-btns">
-              <a href="#" class="button button--accent"><span>stream now</span><span class="play"></span></a>
-              <a href="#" class="button button--transparent">all episodes</a>
-            </div>
-          </div>
-
-          <div id="supernatural" class="tabcontent">
-            <h1>supernatural</h1>
-
-            <dl class="desc-list">
-              <div>
-                <dt><span hidden>Year</span></dt>
-                <dd>2019</dd>
-              </div>
-              <div>
-                <dt><span class="uppercase">director:</span></dt>
-                <dd>name director</dd>
-              </div>
-              <div>
-                <dt><span>seasons:</span></dt>
-                <dd>3 &#10088; 5 Episodes &#10089;</dd>
-              </div>
-            </dl>
-
-            <p class="p">
-              In 1980s Indiana, a group of young friends witness supernatural
-              forces and secret government exploits. As they search for
-              answers, the children unravel a series of extraordinary
-              mysteries.
-            </p>
-
-            <ul role="list" class="rating">
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star star--filled"></span></li>
-              <li><span class="star"></span></li>
-              <li><span class="star"></span></li>
-            </ul>
-
-            <div class="tabcontent-btns">
-              <a href="#" class="button button--accent"><span>stream now</span><span class="play"></span></a>
-              <a href="#" class="button button--transparent">all episodes</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header__popular">
-        <h2 class="header__popular-title">popular this week</h2>
-        <div class="popular-slider swiper">
-          <div class="popular-slider__content">
-            <div class="popular-slider__wrapper swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="popular-slider__item">
-                  <img src="./assets/images/jpg/slider-item1.jpg" alt="slider item">
+    
+          <div>
+            <div id="drama" class="tabcontent">
+              <h1>drama</h1>
+    
+              <dl class="desc-list">
+                <div>
+                  <dt><span hidden>Year</span></dt>
+                  <dd>2019</dd>
                 </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="popular-slider__item">
-                  <img src="./assets/images/jpg/slider-item2.jpg" alt="slider item">
+                <div>
+                  <dt><span class="uppercase">director:</span></dt>
+                  <dd>name director</dd>
                 </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="popular-slider__item">
-                  <img src="./assets/images/jpg/slider-item3.jpg" alt="slider item">
+                <div>
+                  <dt><span>seasons:</span></dt>
+                  <dd>3 &#10088; 5 Episodes &#10089;</dd>
                 </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="popular-slider__item">
-                  <img src="./assets/images/jpg/slider-item4.jpg" alt="slider item">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="popular-slider__item">
-                  <img src="./assets/images/jpg/slider-item5.jpg" alt="slider item">
-                </div>
+              </dl>
+    
+              <p class="p">
+                In 1980s Indiana, a group of young friends witness supernatural
+                forces and secret government exploits. As they search for
+                answers, the children unravel a series of extraordinary
+                mysteries.
+              </p>
+    
+              <ul role="list" class="rating">
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star"></span></li>
+                <li><span class="star"></span></li>
+              </ul>
+    
+              <div class="tabcontent-btns">
+                <a href="#" class="button button--accent"><span>stream now</span><span class="play"></span></a>
+                <a href="#" class="button button--transparent">all episodes</a>
               </div>
             </div>
-          </div>
-
-          <div class="custom-nav-prev">
-            <img src="./assets/images/svg/nav-next.svg" alt="">
-          </div>
-
-          <div class="custom-nav-next">
-            <img src="./assets/images/svg/nav-next.svg" alt="">
+    
+            <div id="thriller" class="tabcontent">
+              <h1>stranger things</h1>
+    
+              <dl class="desc-list">
+                <div>
+                  <dt><span hidden>Year</span></dt>
+                  <dd>2019</dd>
+                </div>
+                <div>
+                  <dt><span class="uppercase">director:</span></dt>
+                  <dd>shawn levy</dd>
+                </div>
+                <div>
+                  <dt><span>seasons:</span></dt>
+                  <dd>3 &#10088; 5 Episodes &#10089;</dd>
+                </div>
+              </dl>
+    
+              <p class="p">
+                In 1980s Indiana, a group of young friends witness supernatural
+                forces and secret government exploits. As they search for
+                answers, the children unravel a series of extraordinary
+                mysteries.
+              </p>
+    
+              <ul role="list" class="rating">
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star"></span></li>
+                <li><span class="star"></span></li>
+              </ul>
+    
+              <div class="tabcontent-btns">
+                <a href="#" class="button button--accent"><span>stream now</span><span class="play"></span></a>
+                <a href="#" class="button button--transparent">all episodes</a>
+              </div>
+            </div>
+    
+            <div id="supernatural" class="tabcontent">
+              <h1>supernatural</h1>
+    
+              <dl class="desc-list">
+                <div>
+                  <dt><span hidden>Year</span></dt>
+                  <dd>2019</dd>
+                </div>
+                <div>
+                  <dt><span class="uppercase">director:</span></dt>
+                  <dd>name director</dd>
+                </div>
+                <div>
+                  <dt><span>seasons:</span></dt>
+                  <dd>3 &#10088; 5 Episodes &#10089;</dd>
+                </div>
+              </dl>
+    
+              <p class="p">
+                In 1980s Indiana, a group of young friends witness supernatural
+                forces and secret government exploits. As they search for
+                answers, the children unravel a series of extraordinary
+                mysteries.
+              </p>
+    
+              <ul role="list" class="rating">
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star star--filled"></span></li>
+                <li><span class="star"></span></li>
+                <li><span class="star"></span></li>
+              </ul>
+    
+              <div class="tabcontent-btns">
+                <a href="#" class="button button--accent"><span>stream now</span><span class="play"></span></a>
+                <a href="#" class="button button--transparent">all episodes</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+    
+        <div class="hero__popular">
+          <h2 class="hero__popular-title">popular this week</h2>
+          <div class="popular-slider swiper">
+            <div class="popular-slider__content">
+              <div class="popular-slider__wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="popular-slider__item">
+                    <img src="./assets/images/jpg/slider-item1.jpg" alt="slider item">
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="popular-slider__item">
+                    <img src="./assets/images/jpg/slider-item2.jpg" alt="slider item">
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="popular-slider__item">
+                    <img src="./assets/images/jpg/slider-item3.jpg" alt="slider item">
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="popular-slider__item">
+                    <img src="./assets/images/jpg/slider-item4.jpg" alt="slider item">
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="popular-slider__item">
+                    <img src="./assets/images/jpg/slider-item5.jpg" alt="slider item">
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="custom-nav-prev">
+              <img src="./assets/images/svg/nav-next.svg" alt="">
+            </div>
+    
+            <div class="custom-nav-next">
+              <img src="./assets/images/svg/nav-next.svg" alt="">
+            </div>
+          </div>
+        </div> 
+      </section>
 
-      <div class="header__sticker">
+      <div class="main__sticker">
         <span class="accent"></span>
         <span class="text">16 &#43;</span>
       </div>
-    </header>
-
-    <main></main>
-
-    <footer class="footer"></footer>
-  </div>
+    </main>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ let popularSlider = new Swiper('.popular-slider__content', {
       slidesPerView: 3,
       spaceBetween: 20
     },
-    992: {
+    768: {
       slidesPerView: 4,
       spaceBetween: 30
     },
