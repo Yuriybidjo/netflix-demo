@@ -1,3 +1,22 @@
+const searchBtn = document.getElementById('searchBtn');
+const navbarForm = document.querySelector('.navbar__form');
+const searchInput = document.getElementById('search');
+
+// search form
+searchBtn.addEventListener('click', (e) => {
+  // If the search bar isn't open yet, prevent form submission and open it
+  if (!navbarForm.classList.contains('active')) {
+    e.preventDefault();
+    navbarForm.classList.add('active');
+    searchInput.focus();
+  } else if (searchInput.value === "") {
+    // If it is open but empty, close it when clicked
+    e.preventDefault();
+    navbarForm.classList.remove('active');
+  }
+  // If there is text in the input, the form will submit normally
+});
+
 // tabs
 document.getElementById("defaultOpen").click();
 
@@ -51,7 +70,7 @@ function updateCalendar() {
   const monthNameEl = document.getElementById("month-day");
   const dayNameEl = document.getElementById("day-name");
   const dayNumEl = document.getElementById("day-number");
-  // const yearEl = document.getElementById("year");
+  const yearEl = document.getElementById("year");
 
   // Helper for 1st, 2nd, 3rd, 4th...
   function getOrdinalSuffix(n) {
@@ -64,7 +83,7 @@ function updateCalendar() {
   monthNameEl.innerText = date.toLocaleString("en", { month: "long" });
   dayNameEl.innerText = date.toLocaleString("en", { weekday: "long" });
   dayNumEl.innerText = day + getOrdinalSuffix(day);
-  // yearEl.innerText = date.getFullYear();
+  yearEl.innerText = date.getFullYear();
 }
 
 // Run immediately on page load
